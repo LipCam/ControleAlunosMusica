@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Controle Alunos</string>
+
+    <!--Botoes tela principal-->
+    <string name="lblAulas">Aulas</string>
+    <string name="lblAlunos">Alunos</string>
+    <string name="lblExportDados">Exp. Dados</string>
+    <string name="lblImportDados">Imp. Dados</string>
+
+    <!--Menu toolbar-->
+    <string name="lblSalvar">Salvar</string>
+    <string name="lblExcluir">Excluir</string>
+    <string name="lblRelatorio">Relatório</string>
+    <string name="lblPesquisar">Pesquisar</string>
+    <string name="lblAjuda">Ajuda</string>
+    <string name="lblSelTodos">Sel. todos</string>
+    <string name="lblDeselTodos">Desel. todos</string>
+    <string name="lblCopiar">Copiar</string>
+
+    <!--Mensagens e alertas-->
+    <string name="msgConfirmDelete">Deseja realmente excluir este registro?</string>
+    <string name="msgAddOk">Registro inserido</string>
+    <string name="msgAddErro">Erro ao inserir o registro</string>
+    <string name="msgUpdateOk">Registro atualizado</string>
+    <string name="msgUpdateErro">Erro ao atualizar o registro</string>
+    <string name="msgDeleteOk">Registro excluído</string>
+    <string name="msgDeleteErro">Erro ao excluir o registro</string>
+    <string name="msgArqSalvoDownload">Arquivo @arq salvo em Downloads</string>
+    <string name="msgArquivoInvalido">Arquivo inválido. Selecione um aquivo do tipo cal</string>
+    <string name="msgSelecRegExp">Selecione registros para exportação</string>
+    <string name="msgConfirmImport">Confirma a importação dos dados?</string>
+    <string name="msgSelecioneAluno">Selecione um aluno</string>
+    <string name="msgSelecioneOpImport">Selecione ao menos uma opção</string>
+    <string name="msgImportacaoRealizada">Importação realizada</string>
+    <string name="msgSelecAlunosCopia">Selecione aluno(s) para copiar a aula</string>
+    <string name="msgCopiaRealizada">Copia realizada</string>
+
+    <!--Labels diversas-->
+    <string name="lblSim">Sim</string>
+    <string name="lblNao">Não</string>
+    <string name="lblInicio">Início</string>
+    <string name="lblFim">Fim</string>
+    <string name="lblDescricao">Descrição</string>
+    <string name="lblSelecAlunoExp">Selecione alunos para exportação dos dados</string>
+    <string name="lblSelecAlunoCopiar">Selecione alunos para copiar a aula</string>
+    <string name="lblSelecArqParaImport">Selecione um arquivo de dados em um diretório de sua preferência</string>
+    <string name="lblSelecFormaImp">Selecione a forma de importação</string>
+    <string name="lblDadosArq">Dados do arquivo</string>
+    <string name="lblSelRegImport">Selecione um registro para importar</string>
+    <string name="lblSelArq">Selecionar arquivo</string>
+    <string name="lblData">Data</string>
+    <string name="lblTipo">Tipo</string>
+    <string name="lblInstrutor">Instrutor</string>
+    <string name="lblObservacao">Observação</string>
+    <string name="lblAluno">Aluno</string>
+    <string name="lblNome">Nome</string>
+    <string name="lblStatus">Status</string>
+    <string name="lblInstrumento">Instrumento</string>
+    <string name="lblMetodo">Método</string>
+    <string name="lblFone">Fone</string>
+    <string name="lblNascimento">Nascimento</string>
+    <string name="lblBatismo">Batismo</string>
+    <string name="lblOficializacao">Oficialização</string>
+    <string name="lblEndereco">Endereço</string>
+    <string name="lblAssunto">Assunto</string>
+    <string name="lblImportar">Importar</string>
+    <string name="lblNovoAluno">Cadastrar novo aluno</string>
+    <string name="lblAlunoExistente">Para aluno existente</string>
+    <string name="lblSobresDados">Sobreescrever dados</string>
+    <string name="lblImportarAulas">Importar aulas</string>
+    <string name="lblImportadoEm">Importado em</string>
+
+    <string name="tabDadosBasicos">Dados Básicos</string>
+    <string name="tabAulas">Aulas</string>
+    <string name="title_activity_atv_imp_dados_det">atvImpDadosDet</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
