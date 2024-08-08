@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_music"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scvMainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btncvAlunos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/btn_main_menu_margin"
+                app:cardBackgroundColor="#E9E8E8"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/img_btn_main_menu_width"
+                        android:layout_height="@dimen/img_btn_main_menu_height"
+                        android:src="@drawable/ic_menu_alunos" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/txt_btn_main_menu_margin_top"
+                        android:text="@string/lblAlunos"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/txt_btn_main_menu_size" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btncvAulas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/btn_main_menu_margin"
+                app:cardBackgroundColor="#E9E8E8"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/img_btn_main_menu_width"
+                        android:layout_height="@dimen/img_btn_main_menu_height"
+                        android:src="@drawable/ic_menu_aula" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/txt_btn_main_menu_margin_top"
+                        android:text="@string/lblAulas"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/txt_btn_main_menu_size" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btncvExportDados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/btn_main_menu_margin"
+                app:cardBackgroundColor="#E9E8E8"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/img_btn_main_menu_width"
+                        android:layout_height="@dimen/img_btn_main_menu_height"
+                        android:src="@drawable/ic_menu_upload" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/txt_btn_main_menu_margin_top"
+                        android:text="@string/lblExportDados"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/txt_btn_main_menu_size" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btncvImportDados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/btn_main_menu_margin"
+                app:cardBackgroundColor="#E9E8E8"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/img_btn_main_menu_width"
+                        android:layout_height="@dimen/img_btn_main_menu_height"
+                        android:src="@drawable/ic_menu_download" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/txt_btn_main_menu_margin_top"
+                        android:text="@string/lblImportDados"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/txt_btn_main_menu_size" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

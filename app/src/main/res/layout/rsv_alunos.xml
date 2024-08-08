@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rsvLinhaAlunos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtrsvNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/text1"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtrsvDataIni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Nome" />
+
+    <TextView
+        android:id="@+id/txtrsvDataIni"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/text1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="05/08/2019"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtrsvNome" />
+
+    <TextView
+        android:id="@+id/txtrsvStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/text1"
+        android:text="Oficializado(a)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/txtrsvNome"
+        app:layout_constraintStart_toStartOf="@+id/txtrsvNome"
+        app:layout_constraintTop_toBottomOf="@+id/txtrsvNome" />
+
+    <TextView
+        android:id="@+id/txtrsvDataOfic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/text1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="05/08/2019"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtrsvDataIni" />
+
+    <TextView
+        android:id="@+id/txtrsvInstrumento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/text1"
+        android:layout_marginBottom="8dp"
+        android:text="Violino"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtrsvStatus"
+        app:layout_constraintStart_toStartOf="@+id/txtrsvStatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtrsvStatus" />
+
+    <ImageView
+        android:id="@+id/imgImp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_menu_download"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtrsvDataOfic" />
+</androidx.constraintlayout.widget.ConstraintLayout>

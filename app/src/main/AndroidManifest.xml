@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.controlealunosmusica">
+
+    <application
+        android:name=".Classes.GlobalClass"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_menu_aula"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <!--        android:theme="@style/Theme.ControleAlunosMusica"-->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- region ImpDados -->
+        <activity
+            android:name=".Forms.ImpDados.atvImpDadosSelArq"
+            android:label="@string/lblImportDados"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Forms.ImpDados.atvImpDadosLista"
+            android:label="@string/lblImportDados"
+            android:parentActivityName=".Forms.ImpDados.atvImpDadosSelArq"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Forms.ImpDados.atvImpDadosDet"
+            android:label="@string/lblImportDados"
+            android:parentActivityName=".Forms.ImpDados.atvImpDadosLista"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Forms.ImpDados.atvImpDadosOpcoes"
+            android:label="@string/lblImportDados"
+            android:parentActivityName=".Forms.ImpDados.atvImpDadosDet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <!-- endregion -->
+        <!-- region ExpDados -->
+        <activity
+            android:name=".Forms.ExpDados.atvExpDados"
+            android:label="@string/lblExportDados"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- endregion -->
+        <!-- region Aulas -->
+        <activity
+            android:name=".Forms.Aulas.atvAulasLista"
+            android:label="@string/lblAulas"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Forms.Aulas.atvAulasEdit"
+            android:label="@string/lblAulas"
+            android:parentActivityName=".Forms.Aulas.atvAulasLista"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Forms.Aulas.atvAulasCopiar"
+            android:label="@string/lblAulas"
+            android:parentActivityName=".Forms.Aulas.atvAulasEdit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /><!-- endregion -->
+        <!-- region Alunos -->
+        <activity
+            android:name=".Forms.Alunos.atvAlunosLista"
+            android:label="@string/lblAlunos"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Forms.Alunos.atvAlunosEdit"
+            android:label="@string/lblAlunos"
+            android:parentActivityName=".Forms.Alunos.atvAlunosLista"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Forms.Alunos.atvAlunosAulasLista"
+            android:label="@string/lblAulas"
+            android:parentActivityName=".Forms.Alunos.atvAlunosEdit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- endregion -->
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>
