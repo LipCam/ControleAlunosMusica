@@ -52,6 +52,7 @@ public class rsvTempAlunosAdapter extends RecyclerView.Adapter<rsvTempAlunosAdap
                     @Override
                     public void onClick(final View v) {
                         holder.chbFlag.setChecked(!holder.chbFlag.isChecked());
+                        lstTempAlunos.get(i).FLAG_BIT = holder.chbFlag.isChecked();
                         new TempAlunos(v.getContext()).SelTemp(lstTempAlunos.get(i).ID_TEMP_INT, holder.chbFlag.isChecked());
                     }
                 });
@@ -59,6 +60,7 @@ public class rsvTempAlunosAdapter extends RecyclerView.Adapter<rsvTempAlunosAdap
                 holder.chbFlag.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(final View v) {
+                        lstTempAlunos.get(i).FLAG_BIT = holder.chbFlag.isChecked();
                         new TempAlunos(v.getContext()).SelTemp(lstTempAlunos.get(i).ID_TEMP_INT, holder.chbFlag.isChecked());
                     }
                 });

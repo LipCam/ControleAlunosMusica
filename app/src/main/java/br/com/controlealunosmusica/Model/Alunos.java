@@ -222,9 +222,11 @@ public class Alunos {
         db.close();
 
         if (Result == -1)
-            return context.getString(R.string.msgUpdateErro);
+            return "Erro ao atualizar o registro";
+            //return context.getString(R.string.msgUpdateErro);
         else
-            return context.getString(R.string.msgUpdateOk);
+            return "Registro atualizado";
+            //return context.getString(R.string.msgUpdateOk);
     }
 
     private ContentValues PutDados()

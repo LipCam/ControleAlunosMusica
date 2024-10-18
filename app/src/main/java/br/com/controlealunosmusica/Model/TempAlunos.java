@@ -12,7 +12,6 @@ import java.util.List;
 
 import br.com.controlealunosmusica.Classes.GlobalClass;
 import br.com.controlealunosmusica.DataBase.DadosOpenHelper;
-import br.com.controlealunosmusica.R;
 
 public class TempAlunos {
     public int ID_TEMP_INT;
@@ -190,9 +189,11 @@ public class TempAlunos {
         db.close();
 
         if (Result == -1)
-            return  context.getString(R.string.msgAddErro);
+            return  "Erro ao inserir o registro";
+            //return  context.getString(R.string.msgAddErro);
         else
-            return context.getString(R.string.msgAddOk);
+            return  "Registro inserido";
+            //return context.getString(R.string.msgAddOk);
     }
 
     public Integer GetMaxCode() {
@@ -258,9 +259,11 @@ public class TempAlunos {
         db.close();
 
         if (Result == -1)
-            return context.getString(R.string.msgDeleteErro);
+            return "Erro ao excluir o registro";
+            //return context.getString(R.string.msgDeleteErro);
         else
-            return context.getString(R.string.msgDeleteOk);
+            return "Registro excluído";
+            //return context.getString(R.string.msgDeleteOk);
     }
 
     public void SelTemp(int IdTemp, boolean Sel)
